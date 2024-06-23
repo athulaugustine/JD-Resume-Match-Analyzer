@@ -9,8 +9,6 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.pydantic_v1 import BaseModel, Field
 import pandas as pd
 
-llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
-
 class Applicant(BaseModel):
     """Information about a job applicant based on the job description and applicant resume."""
 
@@ -82,7 +80,8 @@ def extract_text(file_is, file_type):
 
 
 
-def format_content(JD_Resume):
+def format_content(JD_Resume,gpt_key):
+    llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo",api_key=gpt_key)
     text_splitter = CharacterTextSplitter.from_tiktoken_encoder(
         chunk_size=1000, chunk_overlap=200
     )
@@ -125,7 +124,8 @@ def format_content(JD_Resume):
     return response["output_text"]
 
 
-def elibility_check(job_description, resume):
+def elibility_check(job_description, resume,gpt_key):
+    llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo",api_key=gpt_key)
     prompt_template = """Analyze the following job description and resume to determine the eligibility of the applicant. Provide a comprehensive assessment covering the following aspects:
 
     1. Key Requirements from Job Description:
@@ -175,7 +175,8 @@ def elibility_check(job_description, resume):
     return response
 
 
-def analyze_jd_resume(job_description, resume,applicant_eligibility):
+def analyze_jd_resume(job_description, resume,applicant_eligibility,gpt_key):
+    llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo",api_key=gpt_key)
     prompt = ChatPromptTemplate.from_messages([
     (
         "system",
