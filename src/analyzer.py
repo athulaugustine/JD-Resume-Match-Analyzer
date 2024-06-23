@@ -25,7 +25,7 @@ class Applicant(BaseModel):
     )
     eligible_for_role: Optional[str] = Field(
         default=None,
-        description="Final recommendation on the applicant's eligibility for the role based on the APPLICANT ELIGIBILITY."
+        description="Applicant's eligibility for the role based on the APPLICANT ELIGIBILITY."
     )
     education_background: Optional[str] = Field(
         default=None,
