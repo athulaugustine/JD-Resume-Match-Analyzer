@@ -11,10 +11,10 @@ Features
 
 Screenshots
 
-    ![4](https://github.com/athulaugustine/JD-Resume-Match-Analyzer/assets/34716154/1cd143e8-5bc5-460a-9d05-722defe01cbe)
-    ![3](https://github.com/athulaugustine/JD-Resume-Match-Analyzer/assets/34716154/dd71e53d-abee-4f5f-a2a0-564fc954a718)
-    ![2](https://github.com/athulaugustine/JD-Resume-Match-Analyzer/assets/34716154/aa4f85ba-1521-401b-9358-7ff51a2f3fbd)
-    ![1](https://github.com/athulaugustine/JD-Resume-Match-Analyzer/assets/34716154/e1ef72e8-37d3-411f-9b8a-3da102c5c513)
+![4](https://github.com/athulaugustine/JD-Resume-Match-Analyzer/assets/34716154/1cd143e8-5bc5-460a-9d05-722defe01cbe)
+![3](https://github.com/athulaugustine/JD-Resume-Match-Analyzer/assets/34716154/dd71e53d-abee-4f5f-a2a0-564fc954a718)
+![2](https://github.com/athulaugustine/JD-Resume-Match-Analyzer/assets/34716154/aa4f85ba-1521-401b-9358-7ff51a2f3fbd)
+![1](https://github.com/athulaugustine/JD-Resume-Match-Analyzer/assets/34716154/e1ef72e8-37d3-411f-9b8a-3da102c5c513)
 
 
 Installation
